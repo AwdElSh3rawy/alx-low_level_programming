@@ -1,22 +1,20 @@
-#include "holberton.h"
+#include"holberton.h"
 
 /**
- * _islower - Entry point
- * Description: checks is a character is lowercase
- * @c: the integer value it receives
- * Return: 1 if true. 0 if false.
- */
+ * _islower - function to check if
+ *           character is lowercase
+ *
+ * @c: checks input of function
+ *
+ * Return: returns 1 if `c` is lowercase
+ *         otherwise always 0 (Success)
+*/
+
 int _islower(int c)
 {
-int i = 'a';
-
-for (i = 'a'; i <= 'z'; i++)
-{
-/* refer int c*/
-if (c == i)
-{
-return (1);
-}
-}
-return (0);
+	/*check if value is lowercase*/
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	else
+		return (0);
 }
